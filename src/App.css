@@ -21,3 +21,12 @@
   color:white;
   top:30%;
 }
+
+
+@media (max-width: 1250px) {
+  /* … */
+  .morgue {
+    max-width:500px;
+    /* height: fit-content; */
+  }
+}
