@@ -2,10 +2,12 @@
   display:flex;
   justify-content: center;
   background-color: black;
+  height:100vh
 }
 .morgue {
-  width:100vh;
-  /* height: fit-content; */
+  /* width:100vw; */
+  height: 100vh;
+
 }
 
 /* @keyframes example {
@@ -26,7 +28,7 @@
 @media (max-width: 1250px) {
   /* … */
   .morgue {
-    max-width:500px;
-    /* height: fit-content; */
+    width:100vw;
+    height:fit-content;  
   }
 }
