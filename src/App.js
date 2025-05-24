@@ -71,6 +71,7 @@ function App() {
     },
     {
       src: image14,
+      story:"test"
     },
     {
       src: image15,

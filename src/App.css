@@ -4,8 +4,8 @@
   background-color: black;
 }
 .morgue {
-  /* width: 100px; */
-  height: 100vh;
+  width:fit-content;
+  height: fit-content;
 }
 
 /* @keyframes example {
