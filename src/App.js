@@ -26,12 +26,13 @@ import {useEffect, useState } from 'react';
 
 function App() {
   const [currentPic,setCurrentPic] = useState(19);
+  const [start,setStart] = useState(false);
 
  
   const photos = [
     {
       src: image,
-      story:"here"
+      story:"I booted up resident evil on my projector. Honestly didn't play much cuz it wasn't long b4 I went into a food coma and passed out to dashie videos."
     },
     {
       src: image2,
@@ -44,34 +45,42 @@ function App() {
     },
     {
       src: image5,
+      story:"also I got a shit load of food on the way here... yes TWO !!! cinnabons, 1 order of chicken lo mein from lucky china star, and my go to coping combo, BBQ Chicken nachos, with a Smoky Sweet BBQ Burger <3 "
+
     },
     {
       src: image6,
     },
     {
       src: image7,
+      story:"with my new found hobby of stuffing my face with junk until I'm in  excruciating pain, what better way to celebrate than to eat myself into another coma for the first time in my new house?"
     },
     {
       src: image8,
+      story:"Had unloaded the truck a while ago... once I returned the uhaul, I drove around downtown detroit for one more nostalgia trip as I said goodbye to my childhood forever."
     },
     {
       src: imag9,
+      story:"its time to go"
     },
     {
       src: image10,
+      story:"man... I thought fate had it out for me to die in this room. I couldn't believe I was actually moving on. Some of my favorite memories were made here, in a way I'll miss what it was like to be here, but theres really no incentive for me to stay any longer. "
     },
     {
       src: image11,
     },
     {
       src: image12,
+      story:"I haven't see the room like this since we moved there in 2019, it felt pretty weird."
     },
     {
       src: image13,
+      story:"the room was empty. this lil pile was all I had left lol"
     },
     {
       src: image14,
-      story:"test"
+      story:"<3"
     },
     {
       src: image15,
@@ -87,25 +96,60 @@ function App() {
     },
     {
       src: image19,
-       story:"Took a pic to get a before before I clean the room out"
     },
     {
       src: image20,
-      story:"Took a pic to get a before before I clean the room out"
+      story:"Took some pics before loading the truck"
     },
   ];
+
   const nextPic = (()=>{
     setCurrentPic(currentPic - 1)
     console.log(currentPic)
   })
-
+const [showing,setShowing] = useState(true);
+if (start){
+  return ( 
+     <div className="App">
+    <button className="nextpic" onClick={nextPic}>nextpic</button>
+    <div className="image-container">
+    <img className="morgue" src={photos[currentPic].src} key={photos[currentPic].src}></img>
+    </div>
+    <p className="story">{photos[currentPic].story}</p>
+    </div>)
+}else{
+  return(
+        <div className="App">
+      <div className="swag" onClick={(()=>setStart(true))}>
+      <img className="swag-blood" src="https://img1.picmix.com/output/stamp/normal/7/1/6/8/1088617_79848.png"></img>
+      <img  className="swag-card"src="https://img1.picmix.com/output/stamp/normal/3/4/1/9/2519143_c9fc4.png"></img>
+      <img className="swag-halo" src="https://img1.picmix.com/output/stamp/normal/1/0/9/4/2064901_885c1.png"></img>
+      </div>
+      </div>
+  )
+}
   return (
-    <div className="App">
-      <button className="nextpic" onClick={nextPic}>nextpic</button>
-      <img className="morgue" src={photos[currentPic].src} key={photos[currentPic].src}></img>
-      <p className="story">{photos[currentPic].story}</p>
-      
-     </div>
+    // <div className="App">
+
+      // {start ?
+      // <div className="App">
+      // <button className="nextpic" onClick={nextPic}>nextpic</button>
+      // <img className="morgue" src={photos[currentPic].src} key={photos[currentPic].src}></img>
+      // <p className="story">{photos[currentPic].story}</p>
+      // </div>
+      // :
+      // <div className="App">
+      // <div className="swag" onClick={(()=>setStart(true))}>
+      // <img className="swag-blood" src="https://img1.picmix.com/output/stamp/normal/7/1/6/8/1088617_79848.png"></img>
+      // <img  className="swag-card"src="https://img1.picmix.com/output/stamp/normal/3/4/1/9/2519143_c9fc4.png"></img>
+      // <img className="swag-halo" src="https://img1.picmix.com/output/stamp/normal/1/0/9/4/2064901_885c1.png"></img>
+      // </div>
+      // </div>
+      // }
+ 
+     
+
+     {/* </div> */}
 
 
   
