@@ -50,6 +50,7 @@ function App() {
     },
     {
       src: image6,
+     
     },
     {
       src: image7,
@@ -61,22 +62,23 @@ function App() {
     },
     {
       src: imag9,
-      story:"its time to go"
+      story:"welp... If I don’t do this, I won’t overcome anything. time to go"
     },
     {
       src: image10,
-      story:"man... I thought fate had it out for me to die in this room. I couldn't believe I was actually moving on. Some of my favorite memories were made here, in a way I'll miss what it was like to be here, but theres really no incentive for me to stay any longer. "
+      story:"Who would’ve thought, that I’d actually get to this point. For as long as I could remember, all I ever wanted was to get away from this place and out on my own. Just to be met with the harsh reality of my inability to do anything on my own. Having nothing more to live for, than to be taken advantage of for the rest of my life. After enduring this humiliating existence for as long as I could remember , it is finally going to end. 16yo me would be very proud. All things considered… I’m very blessed to have been born into a family as loving & caring as they are. I’m not at all ready for what’s to come & am completely uncertain as to whether I’m capable of overcoming it or not. "
     },
     {
       src: image11,
+       story:"As much as I wanted to leave... Its pretty crazy how some of my happiest & most pivotal moments took place here. It was quite the journey."
     },
     {
       src: image12,
-      story:"I haven't see the room like this since we moved there in 2019, it felt pretty weird."
+      story:"Damn... I haven't see the room like this since we moved in (2019). Felt pretty weird."
     },
     {
       src: image13,
-      story:"the room was empty. this lil pile was all I had left lol"
+      story:"now to sweep up this last bit..."
     },
     {
       src: image14,
@@ -116,6 +118,8 @@ if (start){
     <img className="morgue" src={photos[currentPic].src} key={photos[currentPic].src}></img>
     </div>
     <p className="story">{photos[currentPic].story}</p>
+    {/* <iframe id="embedplayer" src="http://www.bitview.net/embed?v=YLO2OPEUf4m" width="425" height="344" allowfullscreen scrolling="off" frameborder="0"></iframe> */}
+    {/* <object width="425" height="305"><embed src="https://media.xf1re.com/swf/embedplayer.swf" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="305" flashvars="videoid=20c5ce85"></embed></object> */}
     </div>)
 }else{
   return(
