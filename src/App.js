@@ -21,11 +21,22 @@ import image17 from './pics/Walker0784/000007840017.jpg'
 import image18 from './pics/Walker0784/000007840018.jpg'
 import image19 from './pics/Walker0784/000007840019.jpg'
 import image20 from './pics/Walker0784/000007840020.jpg'
+import image21 from './pics/Walker4651/000046510018.jpg'
+import image22 from './pics/Walker4652/000046520011.jpg'
+import image23 from './pics/Walker4652/000046520013.jpg'
+import image24 from './pics/Walker4652/000046520018.jpg'
+import image25 from './pics/Walker4652/000046520019.jpg'
+import image26 from './pics/Walker4652/000046520021.jpg'
+// import image27 from './pics/Walker4651.jpg'
+// import image28 from './pics/Walker4651.jpg'
+// import image29 from './pics/Walker4651.jpg'
+// import image30 from './pics/Walker4651.jpg'
+// import image31 from './pics/Walker4651.jpg'
 
 import {useEffect, useState } from 'react';
 
 function App() {
-  const [currentPic,setCurrentPic] = useState(19);
+  const [currentPic,setCurrentPic] = useState(21);
   const [start,setStart] = useState(false);
 
  
@@ -34,31 +45,31 @@ function App() {
       src: image,
       story:"I booted up resident evil on my projector. Honestly didn't play much cuz it wasn't long b4 I went into a food coma and passed out to dashie videos."
     },
-    {
-      src: image2,
-    },
-    {
-      src: image3,
-    },
-    {
-      src: image4,
-    },
+    // {
+    //   src: image2,
+    // },
+    // {
+    //   src: image3,
+    // },
+    // {
+    //   src: image4,
+    // },
     {
       src: image5,
-      story:"also I got a shit load of food on the way here... yes TWO !!! cinnabons, 1 order of chicken lo mein from lucky china star, and my go to coping combo, BBQ Chicken nachos, with a Smoky Sweet BBQ Burger <3 "
+      story:"got a shit load of food on the way here... yes TWO !!! cinnabons, 1 order of chicken lo mein from lucky china star, and my go to coping combo, BBQ Chicken nachos, with a Smoky Sweet BBQ Burger <3 from the one and only Unburger (you took away the bbq chicken nachos you piece of shit i hate you I will never forgive you fuck you put it back before I track you down and break my foot off in your spine while I beat you to a bloody pulp with your loved ones corpse) "
 
     },
-    {
-      src: image6,
+    // {
+    //   src: image6,
      
-    },
+    // },
     {
       src: image7,
       story:"with my new found hobby of stuffing my face with junk until I'm in  excruciating pain, what better way to celebrate than to eat myself into another coma for the first time in my new house?"
     },
     {
       src: image8,
-      story:"Had unloaded the truck a while ago... once I returned the uhaul, I drove around downtown detroit for one more nostalgia trip as I said goodbye to my childhood forever."
+      story:"Had unloaded the truck a while ago... after I returned the uhaul, I drove around downtown detroit for one more nostalgia trip as I said goodbye to my childhood forever."
     },
     {
       src: imag9,
@@ -74,7 +85,7 @@ function App() {
     },
     {
       src: image12,
-      story:"Damn... I haven't see the room like this since we moved in (2019). Felt pretty weird."
+      story:"Damn... I haven't seen the room this empty since we moved in (2019). Felt pretty weird."
     },
     {
       src: image13,
@@ -102,6 +113,30 @@ function App() {
     {
       src: image20,
       story:"Took some pics before loading the truck"
+    },
+    {
+      src: image21,
+      story:"Took some pics before loading the truck"
+    },
+    {
+      src: image22,
+      story:"Took some pics before loading the truck"
+    },
+    {
+      src: image23,
+      story:"Took some pics before loading the truck"
+    },
+    {
+      src: image24,
+      story:"Took some pics before loading the truck"
+    },
+    {
+      src: image25,
+      story:"Took some pics before loading the truck"
+    },
+    {
+      src: image26,
+      story:"Took some pics before loading the truckhsdhajkjhkh"
     },
   ];
 
